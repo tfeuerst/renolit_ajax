@@ -1,0 +1,31 @@
+{
+	"name": "renolit/renolit-ajax",
+	"description": "RENOLIT Ajax - Sample",
+	"license": "GPL-2.0-or-later",
+	"type": "typo3-cms-extension",
+	"authors": [
+		{
+			"name": "Timo Feuerstein",
+			"role": "Developer"
+		}
+	],
+	"version": "1.0.0",
+	"require": {
+		"typo3/cms-core": "^10.4"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "renolit_ajax"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"RENOLIT\\renolitAjax\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "renolit_ajax"
+		}
+	}
+}

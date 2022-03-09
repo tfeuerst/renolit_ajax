@@ -1,0 +1,34 @@
+plugin {
+  tx_renolitajax {
+
+    view {
+      templateRootPaths {
+        0 = EXT:renolit_ajax/Resources/Private/Templates/
+      }
+
+      partialRootPaths {
+        0 = EXT:renolit_ajax/Resources/Private/Partials/
+      }
+
+      layoutRootPaths {
+        0 = EXT:renolit_ajax/Resources/Private/Layouts/
+      }
+    }
+  }
+}
+
+ajaxCall = PAGE
+ajaxCall {
+  config {
+    debug = 0
+    disableAllHeaderCode = 1
+    additionalHeaders {
+      10 {
+        header = Content-Type: application/json
+        replace = 1
+      }
+    }
+  }
+  typeNum = 202203091650
+  10 < tt_content.list.20.renolitajax_data
+}
